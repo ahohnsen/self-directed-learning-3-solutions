@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate email address</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1>Emails</h1>
+
+    <h2>1. Generate email address</h2>
+    <form data-js="generate-email-form">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName" required />
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName" required />
+      <button>Generate Email</button>
+    </form>
+    <span data-js="generated-email">...</span>
+
+    <h2>2. Guess first and last name from email</h2>
+    <form data-js="guess-name-form">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" required />
+      <button>Guess fullname</button>
+    </form>
+    <span data-js="guessed-name">...</span>
+  </body>
+</html>
